@@ -1,0 +1,25 @@
+.exercise {
+  border: 1px solid red;
+  padding: 1rem;
+  text-align: center;
+}
+.exercise .exercise-title {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.exercise .box {
+  display: flex;
+}
+.exercise .box article {
+  border: 1px solid green;
+  padding: 1rem;
+}
+.exercise .box article:nth-child(odd) {
+  color: blue;
+}
+.exercise .box article:nth-child(even) {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
