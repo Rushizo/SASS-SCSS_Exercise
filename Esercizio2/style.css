@@ -1,0 +1,60 @@
+.exercise {
+  border: 1px solid red;
+  text-align: center;
+}
+.exercise .exercise-title {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.exercise .box {
+  display: flex;
+  color: 0;
+  border: 1px solid 0;
+  padding: 1rem;
+  font-size: 0;
+}
+.exercise .box:nth-child(odd) {
+  color: 0;
+}
+.exercise .box:nth-child(even) {
+  color: 0;
+}
+.exercise .box article {
+  color: green;
+  border: 1px solid green;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box article:nth-child(odd) {
+  color: blue;
+}
+.exercise .box article:nth-child(even) {
+  color: red;
+}
+.exercise .box2 {
+  color: 0;
+  border: 1px solid 0;
+  padding: 1rem;
+  font-size: 0;
+}
+.exercise .box2:nth-child(odd) {
+  color: 0;
+}
+.exercise .box2:nth-child(even) {
+  color: 0;
+}
+.exercise .box2 .box-alone {
+  color: blue;
+  border: 1px solid blue;
+  padding: 1rem;
+  font-size: 24px;
+}
+.exercise .box2 .box-alone:nth-child(odd) {
+  color: green;
+}
+.exercise .box2 .box-alone:nth-child(even) {
+  color: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

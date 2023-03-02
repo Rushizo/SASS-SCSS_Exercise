@@ -1,0 +1,44 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+
+.exercise {
+border: 1px solid $color-primary;
+text-align: center;
+
+
+@mixin text-color ($color, $color1, $color2, $padding, $font-size){
+    color: $color;
+    border: 1px solid $color;
+    padding: $padding;
+    font-size: $font-size;
+    &:nth-child(odd){
+        color: $color1;
+    }
+    &:nth-child(even){
+        color: $color2;
+    }
+}
+
+    .exercise-title {
+        color: $color-tertiary;
+        text-decoration: underline;
+        text-decoration-color: $color-secondary;
+    }
+
+    .box{
+        display: flex;
+        @include text-color(0, 0, 0, 1rem, 0);
+        & article{
+            @include text-color($color-tertiary, $color-secondary, $color-primary, 1rem, 1rem);
+        }
+    }
+    
+    .box2{
+        @include text-color(0, 0, 0, 1rem, 0);
+        .box-alone{
+            @include text-color($color-secondary, $color-tertiary , 0, 1rem, 24px)
+        }
+    }
+}
