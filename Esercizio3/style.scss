@@ -1,0 +1,48 @@
+
+@use "./module-color.scss" as c;
+@use "./module-function.scss" as f;
+
+$color-red: c.$color-primary;
+$color-blue: c.$color-secondary;
+$color-green: c.$color-tertiary;
+
+
+.exercise {
+border: f.rem(1) solid $color-red;
+text-align: center;
+
+
+@mixin text-color ($color, $color1, $color2, $fontsize: 1rem){
+    color: $color;
+    border: f.rem(1) solid $color;
+    padding: f.rem(16);
+    font-size: $fontsize;
+    &:nth-child(odd){
+        color: $color1;
+    }
+    &:nth-child(even){
+        color: $color2;
+    }
+}
+
+    .exercise-title {
+        color: $color-green;
+        text-decoration: underline;
+        text-decoration-color: $color-blue;
+    }
+
+    .box{
+        display: flex;
+        @include text-color(0, 0, 0, f.rem(16));
+        & article{
+            @include text-color($color-green, $color-blue, $color-red, f.rem(16));
+        }
+    }
+    
+    .box2{
+        @include text-color(0, 0, 0, 1rem);
+        .box-alone{
+            @include text-color($color-blue, $color-green, 0, f.rem(16))
+        }
+    }
+}
