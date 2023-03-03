@@ -1,0 +1,67 @@
+.exercise {
+  border: 0.0625rem solid red;
+  text-align: center;
+}
+.exercise .title, .exercise .title_subtitle {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.exercise .title_subtitle {
+  border: red solid 1px;
+  padding: 1rem;
+  max-width: 18.75rem;
+  margin: auto;
+  text-decoration: none;
+}
+.exercise .box {
+  display: flex;
+  color: 0;
+  border: 0.0625rem solid 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box:nth-child(odd) {
+  color: 0;
+}
+.exercise .box:nth-child(even) {
+  color: 0;
+}
+.exercise .box article {
+  color: green;
+  border: 0.0625rem solid green;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box article:nth-child(odd) {
+  color: blue;
+}
+.exercise .box article:nth-child(even) {
+  color: red;
+}
+.exercise .box2 {
+  color: 0;
+  border: 0.0625rem solid 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box2:nth-child(odd) {
+  color: 0;
+}
+.exercise .box2:nth-child(even) {
+  color: 0;
+}
+.exercise .box2 .box-alone {
+  color: blue;
+  border: 0.0625rem solid blue;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box2 .box-alone:nth-child(odd) {
+  color: green;
+}
+.exercise .box2 .box-alone:nth-child(even) {
+  color: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
