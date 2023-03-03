@@ -1,0 +1,96 @@
+
+@use "./module-color.scss" as c;
+@use "./module-function.scss" as f;
+
+$color-red: c.$color-primary;
+$color-blue: c.$color-secondary;
+$color-green: c.$color-tertiary;
+
+@for $variable from 1 to 20 {
+     .box3 div:nth-child(#{$variable})  {
+        background-color: darken(white, $variable * 5);
+     };
+}
+
+@for $variable from 1 to 20 {
+    .box3 div:nth-child(#{$variable})  {
+       color: lighten(black, $variable * 5);
+       text-align: start;
+    };
+    @if $variable == 10{
+        .box3 div:nth-child(#{$variable}){
+            background-color: $color-blue;
+            color: $color-red;
+        }
+    }
+}
+
+$var: f.rem(16), f.rem(32), f.rem(48);
+
+@each $value in $var{
+    .fs-#{$value}{
+        font-size: #{$value}
+    }
+}
+
+
+@mixin text-color ($color, $color1, $color2, $fontsize: 1rem){
+    color: $color;
+    border: f.rem(1) solid $color;
+    padding: f.rem(16);
+    font-size: $fontsize;
+    &:nth-child(odd){
+        color: $color1;
+    }
+    &:nth-child(even){
+        color: $color2;
+    }
+}
+
+.exercise {
+    border: f.rem(1) solid $color-red;
+    text-align: center;
+    
+    & .title {
+        color: $color-green;
+        text-decoration: underline;
+        text-decoration-color: $color-blue;
+        &_subtitle{
+            @extend .title;
+            border: red solid 1px;
+            padding: f.rem(16);
+            max-width: f.rem(300);
+            margin: auto;
+            text-decoration: none;
+        }
+    }
+
+    & .box3{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 f.rem(16) 0 f.rem(16) ;
+
+        & .fs-2rem, .fs-1rem, .fs-3rem{
+            width: f.rem(45);
+            height: f.rem(45);
+            border: f.rem(1) solid $color-red;
+        }
+        
+    }
+
+
+    .box{
+        display: flex;
+        @include text-color(0, 0, 0, f.rem(16));
+        & article{
+            @include text-color($color-green, $color-blue, $color-red, f.rem(16));
+        }
+    }
+    
+    .box2{
+        @include text-color(0, 0, 0, 1rem);
+        .box-alone{
+            @include text-color($color-blue, $color-green, 0, f.rem(16))
+        }
+    }
+}

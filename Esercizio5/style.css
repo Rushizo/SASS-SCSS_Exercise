@@ -1,0 +1,265 @@
+.box3 div:nth-child(1) {
+  background-color: #f2f2f2;
+}
+
+.box3 div:nth-child(2) {
+  background-color: #e6e6e6;
+}
+
+.box3 div:nth-child(3) {
+  background-color: #d9d9d9;
+}
+
+.box3 div:nth-child(4) {
+  background-color: #cccccc;
+}
+
+.box3 div:nth-child(5) {
+  background-color: #bfbfbf;
+}
+
+.box3 div:nth-child(6) {
+  background-color: #b3b3b3;
+}
+
+.box3 div:nth-child(7) {
+  background-color: #a6a6a6;
+}
+
+.box3 div:nth-child(8) {
+  background-color: #999999;
+}
+
+.box3 div:nth-child(9) {
+  background-color: #8c8c8c;
+}
+
+.box3 div:nth-child(10) {
+  background-color: gray;
+}
+
+.box3 div:nth-child(11) {
+  background-color: #737373;
+}
+
+.box3 div:nth-child(12) {
+  background-color: #666666;
+}
+
+.box3 div:nth-child(13) {
+  background-color: #595959;
+}
+
+.box3 div:nth-child(14) {
+  background-color: #4d4d4d;
+}
+
+.box3 div:nth-child(15) {
+  background-color: #404040;
+}
+
+.box3 div:nth-child(16) {
+  background-color: #333333;
+}
+
+.box3 div:nth-child(17) {
+  background-color: #262626;
+}
+
+.box3 div:nth-child(18) {
+  background-color: #1a1a1a;
+}
+
+.box3 div:nth-child(19) {
+  background-color: #0d0d0d;
+}
+
+.box3 div:nth-child(1) {
+  color: #0d0d0d;
+  text-align: start;
+}
+
+.box3 div:nth-child(2) {
+  color: #1a1a1a;
+  text-align: start;
+}
+
+.box3 div:nth-child(3) {
+  color: #262626;
+  text-align: start;
+}
+
+.box3 div:nth-child(4) {
+  color: #333333;
+  text-align: start;
+}
+
+.box3 div:nth-child(5) {
+  color: #404040;
+  text-align: start;
+}
+
+.box3 div:nth-child(6) {
+  color: #4d4d4d;
+  text-align: start;
+}
+
+.box3 div:nth-child(7) {
+  color: #595959;
+  text-align: start;
+}
+
+.box3 div:nth-child(8) {
+  color: #666666;
+  text-align: start;
+}
+
+.box3 div:nth-child(9) {
+  color: #737373;
+  text-align: start;
+}
+
+.box3 div:nth-child(10) {
+  color: gray;
+  text-align: start;
+}
+
+.box3 div:nth-child(10) {
+  background-color: blue;
+  color: red;
+}
+
+.box3 div:nth-child(11) {
+  color: #8c8c8c;
+  text-align: start;
+}
+
+.box3 div:nth-child(12) {
+  color: #999999;
+  text-align: start;
+}
+
+.box3 div:nth-child(13) {
+  color: #a6a6a6;
+  text-align: start;
+}
+
+.box3 div:nth-child(14) {
+  color: #b3b3b3;
+  text-align: start;
+}
+
+.box3 div:nth-child(15) {
+  color: #bfbfbf;
+  text-align: start;
+}
+
+.box3 div:nth-child(16) {
+  color: #cccccc;
+  text-align: start;
+}
+
+.box3 div:nth-child(17) {
+  color: #d9d9d9;
+  text-align: start;
+}
+
+.box3 div:nth-child(18) {
+  color: #e6e6e6;
+  text-align: start;
+}
+
+.box3 div:nth-child(19) {
+  color: #f2f2f2;
+  text-align: start;
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.exercise {
+  border: 0.0625rem solid red;
+  text-align: center;
+}
+.exercise .title, .exercise .title_subtitle {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.exercise .title_subtitle {
+  border: red solid 1px;
+  padding: 1rem;
+  max-width: 18.75rem;
+  margin: auto;
+  text-decoration: none;
+}
+.exercise .box3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+}
+.exercise .box3 .fs-2rem, .exercise .box3 .fs-1rem, .exercise .box3 .fs-3rem {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 0.0625rem solid red;
+}
+.exercise .box {
+  display: flex;
+  color: 0;
+  border: 0.0625rem solid 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box:nth-child(odd) {
+  color: 0;
+}
+.exercise .box:nth-child(even) {
+  color: 0;
+}
+.exercise .box article {
+  color: green;
+  border: 0.0625rem solid green;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box article:nth-child(odd) {
+  color: blue;
+}
+.exercise .box article:nth-child(even) {
+  color: red;
+}
+.exercise .box2 {
+  color: 0;
+  border: 0.0625rem solid 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box2:nth-child(odd) {
+  color: 0;
+}
+.exercise .box2:nth-child(even) {
+  color: 0;
+}
+.exercise .box2 .box-alone {
+  color: blue;
+  border: 0.0625rem solid blue;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.exercise .box2 .box-alone:nth-child(odd) {
+  color: green;
+}
+.exercise .box2 .box-alone:nth-child(even) {
+  color: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
